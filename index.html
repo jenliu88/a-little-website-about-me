@@ -15,11 +15,15 @@
       }
 
       .intro-text {
-         border: 4px solid white;
+         border: 4px solid #4453d7;
          display: inline-block;
          padding: 20px;
          background-color: #fefeffb3;
          margin-top: 150px;
+         box-shadow: 
+        0 0 0 5px #4453d7, 
+        0 0 80px rgba(255, 255, 255, 0.8), 
+        0 4px 10px rgba(0, 0, 0, 0.4); 
       }
 
       .start-b {
@@ -30,8 +34,11 @@
          font-size: 1.5em;
          cursor: pointer; 
          display: block;
-         margin: 30px auto;
+         margin: 40px auto;
          padding: 10px 30px;
+         transform: translateY(-5px);
+         transition: all 0.3s ease;
+         animation: pulse 2s ease-in-out infinite;
       }
 
 
@@ -40,27 +47,33 @@
          color: white;
          border: 4px solid white;
          font-family: 'Press Start 2P', cursive;
-         font-size: 0.5em;
+         font-size: 1em;
          cursor: pointer; 
          display: inline-block;
          margin: 30px auto;
          padding: 8px 20px;
-         margin-top: 235px;
+         margin-top: 200px;
          text-decoration: none;
       }
+
+      @keyframes pulse {
+         0%, 100% { transform: scale(1); }
+         50% { transform: scale(1.1); }
+      }
+
    </style>
 </head>
 <body>
-   <div class=""landing-header>
+   <div class="landing-header">
       <div class="intro-text">
          <h1> HI, IM JENNY </h1>
          <p>CLICK START TO LEARN MORE ABOUT ME</p>
       </div>
-      <button class="start-b" onclick="location='info.html'">START</button>
+      <button class="start-b" onclick="location='opps.html'">START</button>
    </div>
 
-   <div class=""footer>
-      <a href="https://linktr.ee/jenliu88" class="socials-b">SOCIALS</a>
+   <div class="footer">
+      <a href="https://linktr.ee/jenliu88" class="socials-b" target="_blank">SOCIALS</a>
    </div>
 </body>
 
