@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bad side of me</title>
+    <title>Good side of me</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
@@ -37,13 +37,11 @@
         }
 
         .nav-item:hover {
-            color: #b21b1b;
-            background-color: #000000;
             transform: scale(1.1);
         }
 
         .nav-item a {
-            color: rgb(0, 0, 0);
+            color: white;
             text-decoration: none;
             font-family: 'Press Start 2P', cursive;
             font-size: 0.8em;
@@ -55,30 +53,30 @@
             top: 0;
             left: 0;
             right: 0;
-            background-color: #000000dd;
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
             gap: 40px;
             padding: 15px 0;
             z-index: 1000;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid rgb(0, 0, 0);
         }
 
         .top-nav a {
             font-family: 'Press Start 2P', cursive;
-            color: white;
+            color: rgb(0, 0, 0);
             text-decoration: none;
             font-size: 0.8em;
             transition: color 0.3s ease;
         }
 
         .top-nav a:hover {
-            color: #b21b1b;
+            color:  #1bb81d;
         }
 
         .section2 {
-            background-color: black;
-            color: white;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             padding: 100px 20px;
             display: flex;
             flex-direction: column;
@@ -97,18 +95,18 @@
 
         .section2 h5 {
             font-size: 1.5em;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
 
-        .section2 h6.learners {
-            font-size: 0.9em;
-            color: #b21b1b;
-            margin-top: 10px;
+        .section2 h6 {
+            line-height: 1.6;
+            font-size: 1em;
+            color:  #1bb81d;
         }
 
         .section2 img {
-            width: 300px; 
+            width: 170px; 
             height: auto;  
         }
 
@@ -147,8 +145,8 @@
         }
 
         .good-b:hover {
-            color: #1bb81d;
-            border-color: white;
+            color: #b21b1b;
+            border-color: black;
         }
 
         @keyframes pulse {
@@ -165,9 +163,9 @@
 <body>
 
     <nav class="top-nav">
-        <div class="nav-item"><a href="#section2">birthday</a></div>
-        <div class="nav-item"><a href="#section3">fav food</a></div>
-        <div class="nav-item"><a href="#section4">hobbies</a></div>
+        <div class="nav-item"><a href="#section2">intro</a></div>
+        <div class="nav-item"><a href="#section3">projects</a></div>
+        <div class="nav-item"><a href="#section4">skills</a></div>
         <div class="nav-item"><a href="#section5">other</a></div>
     </nav>
     
@@ -178,44 +176,38 @@
 
     <section id="section2" class="section2">
         <div class="container">
-            <h2>BIRTHDAY</h2>
+            <h2>Hi, I'm Jenny</h2>
             <h5>
-                My birthday is 17/12/2005, 
-                currently 19 turning 20.
+                (although you probably know that already) I'm a 2nd year student
+                who is currently studying Computer Science. 
             </h5>
-            <p>But...</p>
-            <br>
-            <h6 class="learners"> Im still on my Ls (passpenger princess)</h6>
-            <img src=""../images/L.png" alt="learners license plate">
+            <h6 > I'm also an ENTP, which means I'm always down for a good debate! </h6>
+            <img src="images/entp.jpg" alt="master debator">
         </div>
     </section>
 
     <section id="section3" class="section2 section3">
         <div class="container">
-            <h2>FAVOURITE FOOD</h2>
+            <h2>PROJECTS</h2>
             <h5>
-                I loveee  spicy food, 
-                the spicer the better
+                Nothing yet, but maybe hopefully this program....
             </h5>
-            <p>Even if...</p>
-            <br>
-            <h6 class="learners"> It destroys my stomach</h6>
-            <img src="images/buldak.png" alt="best instant noodles">
+            <h6 class="learners">plsplsplsplspls</h6>
+            <img src="images/begging.jpg" alt="me begging">
         </div>
     </section>
 
     <section id="section4" class="section2 section4">
         <div class="container">
-            <h2>HOBBIES</h2>
-            <h5>
-                Badminton, playing games , hiking and pool
-            </h5>
-            <p>In this game...</p>
+            <h2>RELEVANT SKILLS</h2>
             <br>
-            <h6 class="learners">I have 2000+ hours 
-                (the vedio is too long but you can watch my excellent gameplay by clicking the link)</h6>
+            <h5>
+                C, JavaScript, Python
+            </h5>
+            <h6 class="learners">and now HTML too, I had a lot fo fun with this website 
+                so would love to learn more </h6>
                 <br>
-                <a class="vid-b" href="https://shorturl.at/wrz7d">[fire vedio here]</a>
+                <img src="images/nerd.webp" alt="coding nerd">
         </div>
     </section>
 
@@ -225,13 +217,13 @@
             <h5>
                 Click here
             </h5>
-            <button class="good-b" onclick="location='good.html'" >GOOD</button>
+            <button class="good-b" onclick="location='bad.html'" >BAD</button>
         </div>
     </section>
 
     <script>
         let i = 0;
-        const txt= "GOOD THINGS ABOUT ME!!"
+        const txt= "GOOD THINGS ABOUT ME :)"
         const speed = 100;
 
         function type() {
