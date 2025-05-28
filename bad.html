@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bad side of me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            scroll-behavior: smooth;
+       }
+
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section1 {
+            justify-content: center;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .section1 h1 {
+            font-size: 3em;
+            line-height: 2;
+        }
+
+        .nav-item {
+            padding: 10px 5px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: #111;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .nav-item:hover {
+            color: #b21b1b;
+            background-color: #000000;
+            transform: scale(1.1);
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8em;
+        }
+
+
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #000000dd;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 15px 0;
+            z-index: 1000;
+            border-bottom: 2px solid white;
+        }
+
+        .top-nav a {
+            font-family: 'Press Start 2P', cursive;
+            color: white;
+            text-decoration: none;
+            font-size: 0.8em;
+            transition: color 0.3s ease;
+        }
+
+        .top-nav a:hover {
+            color: #b21b1b;
+        }
+
+        .section2 {
+            background-color: black;
+            color: white;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section2 .container {
+            max-width: 700px;
+        }
+
+
+        .section2 h2 {
+            font-size: 2em;
+        }
+
+        .section2 h5 {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+
+
+        .section2 h6.learners {
+            font-size: 0.9em;
+            color: #b21b1b;
+            margin-top: 10px;
+        }
+
+        .section2 img {
+            width: 300px; 
+            height: auto;  
+        }
+
+        .section3 img {
+            width: 450px; 
+            height: auto;  
+        }
+
+        .section5 h2{
+            line-height: 1.6;
+        }
+
+        .good-b {
+        background-color: #ffffff;
+        color: black;
+        border: 5px solid black;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 5em;
+        cursor: pointer; 
+        display: block;
+        margin: 40px auto;
+        padding: 10px 25px;
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+        animation: pulse 2s ease-in-out infinite;
+        margin: 100px auto;
+        }
+
+        .good-b:hover {
+            color: #1bb81d;
+            border-color: white;
+        }
+
+        @keyframes pulse {
+        0%, 100% {
+        transform: translateY(-10px) scale(1.2);
+        }
+        50% {
+        transform: translateY(-5px) scale(1.05);
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-item"><a href="#section2">birthday</a></div>
+        <div class="nav-item"><a href="#section3">fav food</a></div>
+        <div class="nav-item"><a href="#section4">hobbies</a></div>
+        <div class="nav-item"><a href="#section5">other</a></div>
+    </nav>
+    
+
+    <section class="section1">
+        <h1 id="text"></h1>
+    </section>
+
+    <section id="section2" class="section2">
+        <div class="container">
+            <h2>BIRTHDAY</h2>
+            <h5>
+                My birthday is 17/12/2005, 
+                currently 19 turning 20.
+            </h5>
+            <p>But...</p>
+            <br>
+            <h6 class="learners"> Im still on my Ls (passpenger princess)</h6>
+            <img src="images/L.png" alt="learners license plate">
+        </div>
+    </section>
+
+    <section id="section3" class="section2 section3">
+        <div class="container">
+            <h2>FAVOURITE FOOD</h2>
+            <h5>
+                I loveee  spicy food, 
+                the spicer the better
+            </h5>
+            <p>Even if...</p>
+            <br>
+            <h6 class="learners"> It destroys my stomach</h6>
+            <img src="images/buldak.png" alt="best instant noodles">
+    </section>
+
+    <section id="section4" class="section2 section4">
+        <div class="container">
+            <h2>HOBBIES</h2>
+            <h5>
+                Badminton, playing games , hiking and pool
+            </h5>
+            <p>In this game...</p>
+            <br>
+            <h6 class="learners">I have 2000+ hours</h6>
+            <video width="550" height="300" controls>
+                <source src="images/HOK.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>          
+    </section>
+
+    <section id="section5" class="section2 section5">
+        <div class="container">
+            <h2>WANT TO KNOW ABOUT MY OPPOSITE SIDE?</h2>
+            <h5>
+                Click here
+            </h5>
+            <button class="good-b" onclick="location='good.html'" >GOOD</button>
+    </section>
+
+    <script>
+        let i = 0;
+        const txt= "Bad things about me ...?"
+        const speed = 100;
+
+        function type() {
+            if (i < txt.length) {
+                document.getElementById("text").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+        type();
+    </script>
+</body>
+</html>
